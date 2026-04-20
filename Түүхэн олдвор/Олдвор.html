@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Олдвор | Historical Artifacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            background-image: url('../texture-bg.png');
+            background-attachment: fixed;
+            background-color: #0f1012;
+        }
+
+        /* Specific styles for page structure */
+        .page-hero {
+            height: 60vh;
+            background-image: url('oldvor.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .page-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(15, 16, 18, 0.9));
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            padding: 50px 0;
+        }
+
+        .content-card {
+            background: rgba(26, 27, 30, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            padding: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .content-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-brown);
+            box-shadow: 0 15px 40px rgba(197, 160, 89, 0.2);
+        }
+
+        .card-image {
+            height: 250px;
+            background-color: #2a2c30;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .card-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+        }
+
+        .card-content {
+            padding: 25px;
+        }
+
+        .card-content h3 {
+            font-family: var(--font-heading);
+            color: var(--primary-brown);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .card-content p {
+            color: #d0d0d0;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <h1 class="loader-title">ТҮҮХЭН ОЛДВОР</h1>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">HistoryMN</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Эхлэл</a></li>
+            <li><a href="../index.html#timeline">Цаг Хугацаа</a></li>
+            <li><a href="../campaigns.html">Аян Дайн</a></li>
+            <li><a href="../index.html#gallery">Галлерей</a></li>
+            <li><a href="../Өв соёл/Өв.html">Өв Соёл</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Back Button -->
+    <a href="../index.html#gallery" class="back-btn">
+        <span>&#8592;</span> Галлерей руу
+    </a>
+
+    <!-- Page Hero -->
+    <header class="page-hero">
+        <div class="hero-content fade-in-up">
+            <span class="subtitle">Өнгөрсөн цагийн гэрч</span>
+            <h1 class="main-title" style="font-size: 3.5rem;">Түүхэн Олдворууд</h1>
+            <p class="hero-desc">Газрын гүнээс олдсон өвөг дээдсийн ул мөр, зэр зэвсэг, урлагийн бүтээлүүд.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="section-container">
+
+        <div class="content-grid">
+
+            <!-- Item 1: Stone Man -->
+            <div class="content-card fade-in-on-scroll">
+                <div class="card-image"
+                    style="background-image: url('../texture-bg.png'), linear-gradient(to bottom, #2a2c30, #000);">
+                </div>
+                <div class="card-content">
+                    <h3>Хүн Чулуун Хөшөө</h3>
+                    <p>Түрэгийн үеийн болон Монголын эзэнт гүрний үеийн хүн чулуун хөшөөнүүд нь тухайн үеийн хувцас
+                        хэрэглэл, царай төрхийг харуулсан үнэт дурсгал юм.</p>
+                </div>
+            </div>
+
+            <!-- Item 2: Sutra -->
+            <div class="content-card fade-in-on-scroll">
+                <div class="card-image"
+                    style="background-image: url('../texture-bg.png'), linear-gradient(to bottom, #2a2c30, #000);">
+                </div>
+                <div class="card-content">
+                    <h3>Судар Бичиг</h3>
+                    <p>Эртний уйгуржин монгол бичгээр бичигдсэн түүхэн сурвалж бичиг, ном судар нь бидний оюун санааны
+                        үнэт өв билээ.</p>
+                </div>
+            </div>
+
+            <!-- Item 3: Pottery/Tools -->
+            <div class="content-card fade-in-on-scroll">
+                <div class="card-image"
+                    style="background-image: url('../texture-bg.png'), linear-gradient(to bottom, #2a2c30, #000);">
+                </div>
+                <div class="card-content">
+                    <h3>Байлдааны Зэвсэг</h3>
+                    <p>Малталтаар олдсон зэв, илд, дуулга, хуяг зэрэг нь Монгол цэргийн зохион байгуулалт, дархны ур
+                        ухааныг илтгэнэ.</p>
+                </div>
+            </div>
+
+            <!-- Item 4: Rock Art -->
+            <div class="content-card fade-in-on-scroll">
+                <div class="card-image"
+                    style="background-image: url('../texture-bg.png'), linear-gradient(to bottom, #2a2c30, #000);">
+                </div>
+                <div class="card-content">
+                    <h3>Хадны Зураг</h3>
+                    <p>Алтайн нурууны хадны сүг зургууд нь эртний хүмүүсийн ахуй амьдрал, шүтлэг бишрэлийг харуулсан
+                        нээлттэй галерей юм.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Монголын Түүх. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">TW</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>

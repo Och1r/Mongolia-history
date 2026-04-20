@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Монголын Түүх | Great History of Mongolia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <h1 class="loader-title">Монголын Түүх</h1>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">HistoryMN</div>
+        <ul class="nav-links">
+            <li><a href="#hero">Эхлэл</a></li>
+            <li><a href="#timeline">Цаг Хугацаа</a></li>
+            <li><a href="campaigns.html">Аян Дайн</a></li>
+            <li><a href="#gallery">Галлерей</a></li>
+            <li><a href="heritage.html">Өв Соёл</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="hero" class="hero-section">
+
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="Mongolia.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content fade-in-up">
+            <span class="subtitle">Агуу түүхийн мөрөөр</span>
+            <h1 class="main-title">Монголын Эзэнт Гүрэн</h1>
+            <p class="hero-desc">Дэлхийн талыг эзэлж, түүхийн хуудсыг шинээр бичсэн агуу өв соёл, баатарлаг түүх.</p>
+            <a href="#timeline" class="cta-button">Түүхтэй танилцах</a>
+        </div>
+
+    </header>
+    <!-- Introduction / Quote -->
+    <section class="intro-section">
+        <div class="container">
+            <blockquote class="quote fade-in-on-scroll">
+                "Бидний хүч бол бидний эв нэгдэл, бидний өв соёл мөнхөд оршино."
+                <cite>- Чингис Хаан</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+        <h2 class="section-title fade-in-on-scroll">Түүхэн Үеүүд</h2>
+        <div class="timeline-container">
+            <!-- Row 1: Text Left, Image Right -->
+            <div class="timeline-row">
+                <div class="timeline-item fade-in-on-scroll">
+                    <div class="timeline-content" id="timeline-hunnu">
+                        <div class="year">МЭӨ IV зуун – МЭ I зуун</div>
+                        <h3>Эртний Хүннү</h3>
+                        <p>Модун Шанью болж Хаан болов</p>
+                    </div>
+                </div>
+                <div class="timeline-item right fade-in-on-scroll">
+                    <div class="timeline-img-card" style="background-image: url('Цаг хугацаа/modn.jpg');"></div>
+                </div>
+            </div>
+
+            <!-- Row 2: Image Left, Text Right -->
+            <div class="timeline-row">
+                <div class="timeline-item fade-in-on-scroll">
+                    <div class="timeline-img-card" style="background-image: url('Цаг хугацаа/khan.jpg');"></div>
+                </div>
+                <div class="timeline-item right fade-in-on-scroll">
+                    <div class="timeline-content" id="timeline-xia">
+                        <div class="year">1227</div>
+                        <h3>Их Монгол улс</h3>
+                        <p>Тэмүүжин Чингис хаан цолыг хүртэж, Монголын нэгдсэн тулгар төрийг байгуулав.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row 3: Text Left, Image Right -->
+            <div class="timeline-row">
+                <div class="timeline-item fade-in-on-scroll">
+                    <div class="timeline-content" id="timeline-kublai">
+                        <div class="year">1260</div>
+                        <h3>Хубилай Хаан</h3>
+                        <p>Хубилай хаан өөрийгөө Их Хаанаар зарлаж, Юань гүрний суурийг тавив.</p>
+                    </div>
+                </div>
+                <div class="timeline-item right fade-in-on-scroll">
+                    <div class="timeline-img-card" style="background-image: url('Цаг хугацаа/haan.jpg');"></div>
+                </div>
+            </div>
+
+            <!-- Row 4: Image Left, Text Right -->
+            <div class="timeline-row">
+                <div class="timeline-item fade-in-on-scroll">
+                    <div class="timeline-img-card" style="background-image: url('Цаг хугацаа/haan.jpg');"></div>
+                </div>
+                <div class="timeline-item right fade-in-on-scroll">
+                    <div class="timeline-content" id="timeline-yuan">
+                        <div class="year">1368</div>
+                        <h3>Юань Гүрний Уналт</h3>
+                        <p>Юань гүрэн мөхөж, Монголчууд эх нутагтаа буцаж ирэв.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campaigns Section -->
+    <section id="campaigns" class="campaigns-section">
+        <div class="campaigns-overlay"></div>
+        <div class="container campaigns-content fade-in-on-scroll">
+            <h2 class="section-title">Агуу Аян Дайнууд</h2>
+            <div class="campaigns-grid">
+                <a href="campaigns.html" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="campaign-card" id="campaign-western">
+                        <h3>Монголчуудын товч түүх</h3>
+                        <video src="MGL.mp4" controls autoplay muted loop playsinline
+                            style="width: 100%; border-radius: 8px; margin-top: 10px;"></video>
+                    </div>
+                </a>
+                <a href="campaigns.html" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="campaign-card" id="campaign-jin">
+                        <h3>Алтан Улсын Аян Дайн</h3>
+                        <p>Чингис хаан болон түүний залгамжлагчдын Хятадын умард хэсгийг эзэлсэн 23 жилийн дайн.</p>
+                    </div>
+                </a>
+                <a href="campaigns.html" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="campaign-card" id="campaign-tangut">
+                        <h3>Тангуд Улсын Аян Дайн</h3>
+                        <p>Монголын баруун өмнөд хилд орших Тангуд улсыг мөхөөсөн Чингис хааны эцсийн аян дайн.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Warrior/Parallax Section -->
+    <section class="parallax-divider">
+        <div class="parallax-content fade-in-on-scroll">
+            <h2>Баатарлаг Гавьяа</h2>
+            <p>Эрэлхэг зориг, морин дэл дээрх амьдрал.</p>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <h2 class="section-title fade-in-on-scroll">Түүхийн Гэрч</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item fade-in-on-scroll">
+                <a href="Өв соёл/Өв.html" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="gallery-card" id="card-culture">
+                        <h3>Өв Соёл</h3>
+                        <p>Монгол гэр, нүүдэлчдийн ахуй.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item fade-in-on-scroll">
+                <a href="Ан гөрөө/Ан.html" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="gallery-card" id="card-weapon">
+                        <h3>Ан Гөрөө</h3>
+                        <p>Ан агнуурын соёл, уламжлал.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="gallery-item fade-in-on-scroll">
+                <a href="Түүхэн олдвор/Олдвор.html" style="text-decoration: none; display: block; height: 100%;">
+                    <div class="gallery-card" id="card-script">
+                        <h3>Түүхэн Олдвор</h3>
+                        <p>Эртний олдвор, бичиг соёл.</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Монголын Түүх. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">TW</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="mn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Өв Соёл | Heritage of Mongolia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        body {
+            background-image: url('../texture-bg.png');
+            background-attachment: fixed;
+            background-color: #0f1012;
+        }
+
+        /* Specific styles for heritage page structure */
+        .heritage-hero {
+            height: 60vh;
+            background-image: url('nuudel.jpg');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .heritage-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(15, 16, 18, 0.9));
+        }
+
+        .heritage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            padding: 50px 0;
+        }
+
+        .heritage-card {
+            background: rgba(26, 27, 30, 0.9);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(197, 160, 89, 0.2);
+            padding: 0;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .heritage-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-brown);
+            box-shadow: 0 15px 40px rgba(197, 160, 89, 0.2);
+        }
+
+        .card-image {
+            height: 220px;
+            background-color: #2a2c30;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .card-image::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+        }
+
+        .card-content {
+            padding: 30px;
+        }
+
+        .card-content h3 {
+            font-family: var(--font-heading);
+            color: var(--primary-brown);
+            margin-bottom: 15px;
+            font-size: 1.5rem;
+            letter-spacing: 1px;
+        }
+
+        .card-content p {
+            color: #d0d0d0;
+            font-size: 1rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .section-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 80px 20px;
+        }
+
+        .details-list {
+            list-style: none;
+            margin-top: 15px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(197, 160, 89, 0.2);
+        }
+
+        .details-list li {
+            color: #b0b0b0;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            font-size: 0.9rem;
+        }
+
+        .details-list li::before {
+            content: '▫';
+            color: var(--primary-brown);
+            margin-right: 12px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <h1 class="loader-title">ӨВ СОЁЛ</h1>
+            <div class="loader-line"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">HistoryMN</div>
+        <ul class="nav-links">
+            <li><a href="../index.html">Эхлэл</a></li>
+            <li><a href="../index.html#timeline">Цаг Хугацаа</a></li>
+            <li><a href="../campaigns.html">Аян Дайн</a></li>
+            <li><a href="../index.html#gallery">Галлерей</a></li>
+            <li><a href="Өв.html" class="active">Өв Соёл</a></li>
+        </ul>
+        <div class="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+
+    <!-- Back Button -->
+    <a href="../index.html#gallery" class="back-btn">
+        <span>&#8592;</span> Галлерей руу
+    </a>
+
+    <!-- Heritage Hero -->
+    <header class="heritage-hero">
+        <div class="hero-content fade-in-up">
+            <span class="subtitle">Монголчуудын үнэт зүйл</span>
+            <h1 class="main-title" style="font-size: 3.5rem;">Өв Соёл ба Уламжлал</h1>
+            <p class="hero-desc">Зуун зууныг дамжин ирсэн нүүдэлчдийн ахуй, соёл, зан заншлын гайхамшиг.</p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <section class="section-container">
+
+        <div class="heritage-grid">
+
+            <!-- Item 1: Ger -->
+            <div class="heritage-card fade-in-on-scroll">
+                <div class="card-image" style="background-image: url('ger.jpg');">
+                </div>
+                <div class="card-content">
+                    <h3>Монгол Гэр</h3>
+                    <p>Нүүдэлчдийн архитектурын гайхамшиг, байгаль дэлхийтэйгээ зохицон амьдрах ухаан.</p>
+                    <ul class="details-list">
+                        <li>Дугуй хэлбэр нь агаарын солилцоог дэмждэг</li>
+                        <li>Амархан задалж, барих боломжтой</li>
+                        <li>Тооно нь наран цагийн үүрэг гүйцэтгэнэ</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Item 2: Deel -->
+            <div class="heritage-card fade-in-on-scroll">
+                <div class="card-image" style="background-image: url('deel.jpeg');">
+                </div>
+                <div class="card-content">
+                    <h3>Үндэсний Хувцас</h3>
+                    <p>Монгол дээл нь жилийн 4 улиралд тохирсон, өмсөхөд эвтэй, эрүүл мэндэд тустай.</p>
+                    <ul class="details-list">
+                        <li>Бүс нь хийморь лундааг бэлгэддэг</li>
+                        <li>Энгэр нь баруун тийш зөрдөг</li>
+                        <li>Мал маллах, морь унахад тохиромжтой</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Item 3: Script -->
+            <div class="heritage-card fade-in-on-scroll">
+                <div class="card-image" style="background-image: url('bicig.jpg');">
+                </div>
+                <div class="card-content">
+                    <h3>Монгол Бичиг</h3>
+                    <p>Босоо бичиг нь тэнгэрээс газарт буусан утгыг илэрхийлдэг дэлхийд ховор бичиг.</p>
+                    <ul class="details-list">
+                        <li>1204 онд Тататунга зохиосон гэгддэг</li>
+                        <li>Үг бүр нь язгуур утгаа хадгалдаг</li>
+                        <li>Уран бичлэгийн (Каллиграф) урлаг</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Item 4: Morin Khuur -->
+            <div class="heritage-card fade-in-on-scroll">
+                <div class="card-image" style="background-image: url('huur.jpg');">
+                </div>
+                <div class="card-content">
+                    <h3>Морин Хуур</h3>
+                    <p>Монгол түмний сэтгэлийн утсыг хөнддөг, хос чавхдаст хөгжмийн зэмсэг.</p>
+                    <ul class="details-list">
+                        <li>Толгойг нь морины толгойгоор сийлдэг</li>
+                        <li>ЮНЕСКО-ийн соёлын өвд бүртгэгдсэн</li>
+                        <li>Татлага, уртын дуутай хосолдог</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Item 5: Idien -->
+            <div class="heritage-card fade-in-on-scroll">
+                <div class="card-image" style="background-image: url('idee.jpg');">
+                </div>
+                <div class="card-content">
+                    <h3>Цагаан Идээ</h3>
+                    <p>Таван хошуу малын сүүгээр боловсруулсан эрүүл, тэжээллэг хүнс.</p>
+                    <ul class="details-list">
+                        <li>Ааруул, хурууд нь кальциар баялаг</li>
+                        <li>Айраг нь эмчилгээний шинж чанартай</li>
+                        <li>Өрөм, зөөхий нь илчлэг ихтэй</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Item 6: Naadam -->
+            <div class="heritage-card fade-in-on-scroll">
+                <div class="card-image" style="background-image: url('naadam.jpg');">
+                </div>
+                <div class="card-content">
+                    <h3>Эрийн Гурван Наадам</h3>
+                    <p>Монгол хүний бяр чадал, цэц мэргэн, хурд хүчийг шалгасан баяр наадам.</p>
+                    <ul class="details-list">
+                        <li>Үндэсний бөх</li>
+                        <li>Хурдан морь</li>
+                        <li>Сур харваа</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Монголын Түүх. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">TW</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+
+</html>6, #5c4822);">
+                </div>
+                <div class="card-content">
+                    <h3>Эрийн Гурван Наадам</h3>
+                    <p>Монгол хүний бяр чадал, цэц мэргэн, хурд хүчийг шалгасан баяр наадам.</p>
+                    <ul class="details-list">
+                        <li>Үндэсний бөх</li>
+                        <li>Хурдан морь</li>
+                        <li>Сур харваа</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 Монголын Түүх. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#">FB</a>
+                <a href="#">IG</a>
+                <a href="#">TW</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
